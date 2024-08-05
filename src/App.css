@@ -1,0 +1,8 @@
+.container{
+  text-align: center;
+}
+
+.weather-container{
+  display: flex;
+  justify-content: center;
+}
