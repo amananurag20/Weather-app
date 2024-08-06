@@ -17,6 +17,8 @@ const App = () => {
     const data = await response.json();
     setLocation(data);
   };
+
+  console.log(location)
  
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,8 +40,8 @@ const App = () => {
           Search
         </Button>
       </form>
-
-      <WeatherCard/>
+    <br></br><br></br>
+      <WeatherCard location={location}/>
     </div>
   );
 };
